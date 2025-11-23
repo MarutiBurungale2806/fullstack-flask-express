@@ -32,4 +32,4 @@ def submit_form():
 
 if __name__ == '__main__':
     # In a real setup, Gunicorn handles the running, but this is for local testing
-    app.run(port=5000)
+    app.run(host="0.0.0.0", port=6000)
