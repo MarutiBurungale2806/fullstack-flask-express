@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/api/submit', async (req, res) => {
   try {
-    const response = await axios.post('http://127.0.0.1:6000/api/submit', req.body);
+    const response = await axios.post('http://backend:6000/api/submit', req.body);
 
     res.json(response.data);
   } catch (error) {
